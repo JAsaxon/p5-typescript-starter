@@ -1,4 +1,5 @@
-import p5 from 'p5'
+import p5 from "p5";
+import { setup, draw } from "./main";
 
 /**
  * @param {p5} p
@@ -6,16 +7,11 @@ import p5 from 'p5'
 export const sketch = (p: p5) => {
   p.setup = () => {
     // Define your initial environment props & other stuff here
-  }
+    setup(p);
+  };
 
   p.draw = () => {
     // Define render logic for your sketch here
-  }
-
-  p.keyPressed = () => {
-    // Export sketch's canvas to file
-    if (p.keyCode === 80) {
-      p.saveCanvas('sketch', 'png')
-    }
-  }
-}
+    draw(p);
+  };
+};

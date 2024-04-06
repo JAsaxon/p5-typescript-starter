@@ -21,6 +21,7 @@
   "author": "Vladislav Mon <arcdeltax@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "lodash": "^4.17.21",
     "p5": "^0.9.0"
   },
   "devDependencies": {

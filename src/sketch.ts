@@ -1,5 +1,5 @@
 import p5 from "p5";
-import { setup, draw } from "./main";
+import { setup, draw, mousePressed } from "./main";
 
 /**
  * @param {p5} p
@@ -13,5 +13,8 @@ export const sketch = (p: p5) => {
   p.draw = () => {
     // Define render logic for your sketch here
     draw(p);
+  };
+  p.mousePressed = () => {
+    mousePressed(p);
   };
 };
